@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cabeçalho {
+    height: 80px;
+    width: 100%;
+    background-color: #ffb934;  
+   
+}
+
+.div_nome {
+    height: 45px;
+    width: 10%;
+    float: left;
+}
+
+.nome_site {
+    width: 14em;
+    margin-left: 25%;
+}
+
+.botão_padrão {
+    font-size: 17px;
+    height: 70px;
+    width: 120px;
+    float: left;
+    font-family: "Cormorant", serif;
+}
+
+.botão_luffy {
+    font-size: 17px;
+    height: 70px;
+    width: 120px;
+    float: left;
+    margin-left: 20%;
+}
+
+.fundo {
+    width: 100%;
+    height: 670px;
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-align: center;
+    font-size: larger;
+    padding: 30px;
+    display: block;
+}
+
+li a:hover {
+    color: #e9260f;
+}
+
+a {
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+}
+
+#linha a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 20px;
+    left: 0;
+    background-color: #e9260f;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#linha a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(0.4);
+}
+
+.mo1 {
+    margin-left: 3px;
+    width: 33%;
+    height: 500px;
+    float: left;
+    margin-top: 25px;
+}
+
+.mo2 {
+    width: 32%;
+    height: 500px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 9.5px;
+}
+
+.mo3 {
+    margin-right: 3px;
+    width: 33%;
+    height: 500px;
+
+    float: right;
+    margin-top: 25px;
+}
+
+.monkey {
+    width: 100%;
+    height: 500px;
+  
+  
+}
+
+.d1 {
+
+    width: 33%;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 #e7e0e0;
+}
+
+.d1::after,
+.d1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform .3s ease-in-out;
+}
+
+.d1::before {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    transform: scaley(0);
+}
+
+.d1::after {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: scaleX(0);
+}
+
+.d1:hover::before {
+    transform: scaleY(0.9);
+}
+
+.d1:hover::after {
+    transform: scalex(0.9);
+}
+.d2{
+    margin-top: 100px;
+   margin-left: 16.8%;
+   width: 60%;
+   height:400px;
+}
+.ox-degrade{
+
+
+    height:170vh;
+    width: 100%;
+    background-image: linear-gradient(45deg,yellow,DarkOrange, OrangeRed	,Orange,Gold) ;
+    background-size: 300% 100%;
+    animation:  degrade-animado 7s  infinite alternate;
+  }
+  @keyframes degrade-animado {
+    0%{
+      background-position-x: 0%;
+    }
+    100%{
+      background-position-x: 100%;
+    }
+  }
+
+  .carac {
+    float: left;
+    width: 80%;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border: double;
+    background-color: #ffb934;
+    align-items: center;
+    text-align: center;
+}
+.zoro { 
+    width: 70%;
+    height: 25px;
+    margin-left: 45px;
+    border: double;
+    background-color: #ffb934;
+    align-items: center;
+    text-align: center;
+}
+.bio {
+    width: 80%;
+    height: 25px;
+    border: double;
+    background-color: #ffb934;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.gomu{
+    width: 95%;
+   height:390px;
+   margin-top: 5px;
+   margin-left: 17px;
+   margin-right: 5px;
+   margin-bottom: 5px;
+}
+    .td_frase {
+        padding-top: 1.5%;
+        margin-left: 37%;
+        margin-right: 30%;
+    }
+    footer {
+        background-color: orangered;
+        width: 100%;
+        height: 200px;
+        border-radius:5px;
+     
+    }
+    .frase {
+        color: rgb(7, 7, 7);
+        font-size: 40px;
+    }
+    
+    .frase_nome {
+        color:rgb(20, 20, 20);
+        font-size: 20px;
+        text-align: right;
+    }

@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+}
+
+/*Scroll*/
+
+html {
+    scroll-behavior:smooth;
+}
+
+/*Fundo*/
+
+.ox-degrade {
+    z-index:+1;
+    justify-content:center;
+    height: 131vh;
+    width:100%;
+    background-image: linear-gradient(45deg,rgb(2, 117, 2),rgb(3, 185, 3),rgb(67, 233, 2),#eeff00);
+    background-size:250% 100%;
+    animation: degrade-animado 7s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0% {
+    background-position-x: 0%;
+    }
+    100% {
+    background-position-x: 100%;
+    }
+}
+
+/*Cabeçalho*/
+
+.cabeçalho {
+    height: 80px;
+    width: 100%;
+    background-color: #ffb934;
+}
+
+.div_nome {
+    height: 45px;
+    width: 10%;
+    float: left;
+}
+
+.nome_site {
+    width: 14em;
+    margin-left: 25%;
+}
+
+.botão_padrão {
+    font-size:17px;
+    height: 70px;
+    width: 120px;
+    float: left;
+    font-family: 'Cormorant', serif;
+}
+
+.botão_luffy {
+    font-size:17px;
+    height: 70px;
+    width: 120px;
+    float: left;
+    margin-left: 20%;    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+li a {
+    text-align: center;
+    font-size: larger;
+    padding: 30px;
+    display: block;
+}
+
+li a:hover {
+    color: #e9260f;
+}
+
+a {
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration: none;  
+}
+
+#linha a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 20px;
+    left: 0;
+    background-color:  #e9260f;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#linha a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(0.4);
+}
+
+/*Textos*/
+
+.carac {
+    float: left;    
+    width: 48%;
+    height: 23px;
+    margin-top: 2.3%;
+    margin-left: 4%;
+    text-align: center;
+    font-size: large;
+    border: double;
+    background-color: #ffb934;
+}
+
+.bio {
+    float: left;  
+    width: 48%;
+    height: 23px;
+    margin-left: 35.2%;
+    margin-top: 25%;
+    text-align: center;
+    font-size: large;
+    border: double;
+    background-color: #ffb934;
+}
+
+/*Imagens*/
+
+.usopp { 
+    float: left;
+    width: 30%;
+    height: 23px;
+    margin-left: 1%;
+    margin-top: 2.3%;
+    text-align: center;
+    font-size: large;
+    border: double;
+    background-color: #ffb934;
+}
+
+.div_arma { 
+    height: 20%px;
+    width: 10%;
+    height: 23px;
+    position: absolute;
+    right: 0px;
+    margin-right: 2%;
+    margin-top: 2.3%;
+    text-align: center;
+    font-size: large;
+    border: double; 
+    background-color: #ffb934;
+}
